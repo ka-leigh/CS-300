@@ -1,0 +1,15 @@
+// in order traversal to print sorted cases 
+	void inOrder(Node* node) {
+		if (node != nullptr) {
+			inOrder(node->left);
+			cout << node->course.courseId << ", " << node->course.title << endl;
+			inOrder(node->right);
+
+		}
+	}
+
+This is called for with this section of code
+case 2:
+				cout << "Here is a sample schedule: " << endl;
+				bst->PrintInOrder();
+				break;
